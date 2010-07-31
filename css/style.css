@@ -1,0 +1,115 @@
+/* ----------------------------
+Author: Anders Haig = minim.co
+Version: 1.0
+File: CSS Styles
+---------------------------- */
+
+input[type=submit],label,select,.pointer { cursor:pointer; }
+
+body {
+	background:#111111 url(../img/bg.gif) 0 0 repeat;
+	color:#FFF;
+}
+
+#header {
+	height:60px;
+	background:#444;
+	margin-bottom:100px;
+}
+
+#main {
+	margin-bottom:20px;
+}
+
+#control {
+	background:url(../img/controlbg.png) 0 0 no-repeat;
+	height:400px;
+}
+
+#output {
+	background:url(../img/outputbg.png) 0 0 no-repeat;
+	height:400px;
+}
+
+#preview {
+	background:url(../img/previewbg.png) 0 0 no-repeat;
+	height:400px;
+}
+
+.inner {padding:20px;}
+
+#more {
+	background:#666;
+	margin-bottom:20px;
+}
+
+#footer {
+	font-size:11px;
+	text-align:right;
+}
+
+
+/* ----------------------------
+----------STRUCTURE------------
+---------------------------- */
+
+.minim {
+	display:inline-block;
+	font-size:15px;
+	font-weight:700;
+	padding:7px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration:none;
+}
+
+/* ----------------------------
+------------COLOR--------------
+---------------------------- */
+
+.ltBlue {
+	color:#FFF;
+	border-top:1px solid #59bfce;
+	border-left:1px solid #316678;
+	background:#3a89a8;
+	background-image:-webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(68,153,182)),
+    color-stop(1, rgb(48,117,151))
+	);
+	background-image:-moz-linear-gradient(
+    center top,
+    rgb(68,153,182) 0%,
+    rgb(48,117,151) 100%
+	);
+	text-shadow: -1px 0px 0px #366c87, 0px 1px 0px #2d5a70;
+	filter:
+	progid:DXImageTransform.Microsoft.Dropshadow(Color=#000000, OffX=-1, OffY=0)
+    progid:DXImageTransform.Microsoft.Dropshadow(Color=#000000, OffX=0, OffY=-1); 
+}
+
+.dkBlue {
+	color:#FFF;
+	border-top:1px solid #5a8fc5;
+	border-left:1px solid #304e74;
+	background:#3d6098;
+	background-image:-webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(65,104,169)),
+    color-stop(1, rgb(52,80,130))
+	);
+	background-image:-moz-linear-gradient(
+    center top,
+    rgb(65,104,169) 0%,
+    rgb(52,80,130) 100%
+	);
+	text-shadow: -1px 0px 0px #3c4c78, 0px 1px 0px #253c57;
+	filter:
+	progid:DXImageTransform.Microsoft.Dropshadow(Color=#000000, OffX=-1, OffY=0)
+    progid:DXImageTransform.Microsoft.Dropshadow(Color=#000000, OffX=0, OffY=-1);  
+}

@@ -8,12 +8,15 @@ input[type=submit],label,select,.pointer { cursor:pointer; }
 
 body {
 	background:#111111 url(../img/bg.gif) 0 0 repeat;
+	font-family: Frutiger, "Frutiger Linobtype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#FFF;
 }
 
+a {color:#33A3CF; text-decoration:none;}
+
 #header {
 	height:60px;
-	background:#444;
+	background:#33A3CF;
 	margin-bottom:100px;
 }
 
@@ -26,9 +29,36 @@ body {
 	height:400px;
 }
 
+.txtin {
+	background:none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border:1px solid #FFF;
+	padding:4px 6px;
+	color:#AAA;
+	font-weight:normal;
+	font-size:12px;
+}
+
+.txtin:hover {
+	color:#FFF;	
+}
+
+.txtin:focus {
+	border:1px solid #33A3CF;
+	color:#FFF;
+}
+
+#button-text {width:160px;}
+
 #output {
 	background:url(../img/outputbg.png) 0 0 no-repeat;
 	height:400px;
+}
+
+#output h3 {
+	color:#33A3CF;	
 }
 
 #preview {
@@ -36,17 +66,24 @@ body {
 	height:400px;
 }
 
-.inner {padding:20px;}
+.inner {padding:15px;}
 
 #more {
-	background:#666;
+	background:#111111;
+	color:#FFF;
 	margin-bottom:20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #272727;
 }
 
 #footer {
 	font-size:11px;
 	text-align:right;
 }
+
+#footer a:hover {text-decoration:underline;}
 
 
 /* ----------------------------

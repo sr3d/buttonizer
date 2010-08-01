@@ -1,6 +1,4 @@
-// Start SimpleSlide
-
-$(document).ready( function(){ simpleSlide(); });
+// Slider bar
 
 // Fade links
 

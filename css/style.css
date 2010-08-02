@@ -8,16 +8,29 @@ input[type=submit],label,select,.pointer { cursor:pointer; }
 
 body {
 	background:#111111 url(../img/bg.gif) 0 0 repeat;
-	font-family: Frutiger, "Frutiger Linobtype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Frutiger, Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#FFF;
 }
 
-a {color:#33A3CF; text-decoration:none;}
+a {color:#FFFF00; text-decoration:none;}
 
 #header {
-	height:60px;
-	background:#33A3CF;
+	background:#111111;
+	color:#FFF;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px; 
+	border:1px solid #272727;
+	border-top:none;
+	height:70px;
 	margin-bottom:100px;
+}
+
+#logo {
+	padding:15px;	
 }
 
 #main {
@@ -46,7 +59,7 @@ a {color:#33A3CF; text-decoration:none;}
 }
 
 .txtin:focus {
-	border:1px solid #33A3CF;
+	border:1px solid #FFFF00;
 	color:#FFF;
 }
 
@@ -57,8 +70,8 @@ a {color:#33A3CF; text-decoration:none;}
 	height:400px;
 }
 
-#output h3 {
-	color:#33A3CF;	
+h3 {
+	color:#FFFF00;	
 }
 
 #preview {

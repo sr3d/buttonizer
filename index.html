@@ -12,14 +12,19 @@
 	<script type="text/javascript">
 	    Cufon.replace('.class-here', { fontFamily: 'Gotham', hover: true });
 	</script>
-        
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
-	<script src="js/bagelroar.js" type="text/javascript"></script>
+  <link type="text/css" href="css/themes/base/jquery.ui.all.css" rel="Stylesheet" />  
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+  <script src="js/bagelroar.js" type="text/javascript"></script>
+  
+  <script src="js/vendors/template.js" type="text/javascript"></script>
+  
+  <script src="js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
-
 <div class="container_16">
     <div class="grid_16">
     	<div id="header">
@@ -32,17 +37,20 @@
         	<div id="control">
             	<div class="inner">
                 <h3>Pick your options!</h3>
-				<input type="text" id="button-class" class="txtin" value="Pick a class" /><br /><br />
-        		<input type="text" id="button-text" class="txtin" value="What should your button say?" /><br /><br />
-				<label>How rounded should your border be?</label><br />
-                Slider (maybe the JQuery UI one?)<br /><br />
+                <input type="text" id="className" class="txtin" placeholder="Pick a class" value="" /><br /><br />
+                <input type="text" id="button-text" class="txtin" value="What should your button say?" /><br /><br />
+                <label>How rounded should your border be?</label><br />
+                
+                <div id="borderRadiusSlider"></div><!-- #borderRadiusSlider -->
+                
+                <br /><br />
                 <label>What color button would you like?</label><br />
                 Color Picker (to be decided)<br /><br />
                 <label>What size button is best?</label><br />
-                <input type="radio" name="size" value="small" /> Small<br />
-                <input type="radio" name="size" value="medium" /> Medium<br />
-                <input type="radio" name="size" value="large" /> Large
-                	
+                
+                <div id="fontSizeSlider"></div><!-- #fontSizeSlider -->
+                
+                
             	</div>
             </div>
         </div>
@@ -54,8 +62,9 @@
                 &lt;a class=&quot;minim ltBlue&quot; href=&quot;#&quot;&gt;Preview&lt;/a&gt;
                 </p>
                 <h3>CSS:</h3>
-                <p>
-                .minim {<br />
+                <pre id="outputCss">blah</pre>
+
+                <!-- .<span id="">minim {<br />
                     &nbsp;&nbsp;&nbsp;display:inline-block;<br />
                     &nbsp;&nbsp;&nbsp;font-size:15px;<br />
                     &nbsp;&nbsp;&nbsp;font-weight:700;<br />
@@ -64,7 +73,7 @@
                     &nbsp;&nbsp;&nbsp;-moz-border-radius: 3px;<br />
                     &nbsp;&nbsp;&nbsp;border-radius: 3px;<br />
                     &nbsp;&nbsp;&nbsp;text-decoration:none;<br />
-                }
+                } -->
                 </p>
             	</div>
             </div>
@@ -94,6 +103,12 @@
         </div>
     </div>
 </div>
+
+<ul></ul>
+
+
+
+
 
 </body>
 </html>

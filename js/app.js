@@ -2,8 +2,9 @@ $(document).ready(function() {
   /* hook up the class prefix */
   var settings = {
     maxBorder:      20,  //px
-    minFontSize:    14,
-    maxFontSize:    30
+    minFontSize:    10,
+    maxFontSize:    30,
+    maxPadding:    	10
   }
   
   var css = {
@@ -65,11 +66,11 @@ $(document).ready(function() {
   
   $("#borderRadiusSlider").slider({
     min:        0
-    ,max:       settings.maxFontSize
+    ,max:       settings.maxBorder
     ,slide:     setBorderRadius
     ,change:    setBorderRadius
+	,value:		3
   });
-  
   
   var setFontSize = function(event,ui) {
     css.fontSize = ui.value + 'px'; 
@@ -80,9 +81,20 @@ $(document).ready(function() {
     ,max:     settings.maxFontSize
     ,slide:   setFontSize
     ,change:  setFontSize
+	,value:   15
   });
   
-  
+  var setPadding = function(event,ui) {
+    css.padding = ui.value + 'px'; 
+    preview();
+  };
+  $('#paddingSlider').slider({
+    min:      0
+    ,max:     settings.maxPadding
+    ,slide:   setPadding
+    ,change:  setPadding
+	,value:	  7
+  });
   
   preview();  
 });

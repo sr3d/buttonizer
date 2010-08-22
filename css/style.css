@@ -42,12 +42,42 @@ a {color:#FFFF00; text-decoration:none;}
 	height:400px;
 }
 
-.control-item {
-	margin-bottom:20px;	
+.controlInput {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background:#111111;
+	border:1px solid #272727;
+	color:#FFFFFF;
+	padding:5px 10px;
+	margin-bottom:5px;	
 }
-.control-item label {
-	display:block;
-	margin-bottom:5px;
+.controlInput label {
+	display:inline-block;
+	width:210px;
+}
+.controlSlider {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background:#111111;
+	border:1px solid #272727;
+	color:#FFFFFF;
+	padding:5px 10px 10px;
+	margin-bottom:5px;	
+}
+.controlSlider label {
+	display:inline-block;
+	margin-bottom:5px;	
+}
+
+#controlInner {
+	padding:5px;
+}
+
+#controlInner h3 {
+	padding:10px 0 0;
+	text-align:center;
 }
 
 .txtin {
@@ -57,9 +87,12 @@ a {color:#FFFF00; text-decoration:none;}
 	border-radius: 6px;
 	border:1px solid #FFF;
 	padding:4px 6px;
+	margin:5px 0;
 	color:#AAA;
 	font-weight:normal;
 	font-size:12px;
+	width:140px;
+	display:inline-block;
 }
 
 .txtin:hover {
@@ -71,32 +104,39 @@ a {color:#FFFF00; text-decoration:none;}
 	color:#FFF;
 }
 
-#button-text {width:160px;}
+#borderRadiusSlider, #fontSizeSlider, #paddingSlider {
+	background:none;
+	border:1px solid #FFF;
+	height:0.5em;
+}
+
+.ui-slider-handle {height:0.9em; width:0.9em; cursor:pointer; background-image:none; background-color:#FFF;}
+.ui-slider-horizontal .ui-slider-handle {top: -0.25em;}
+
+#button-text {}
 
 #output {
 	background:url(../img/outputbg.png) 0 0 no-repeat;
 	height:300px;
 }
 
+#outputHtml {
+	
+}
+
 h3 {
-	color:#FFFF00;	
+	color:#FFFF00;
+	margin-bottom:10px;
 }
 
 #preview {
-	background:url(../img/previewbg.png) 0 0 no-repeat;
-	height:80px;
 	margin-top:20px;
-	position:relative;
 }
 
 .inner {padding:15px;}
 
-#preview h3 {
-	margin-right:20px;
-	display:inline;
-}
-
-#renderedPreview {display:inline;}
+#previewText {float:left; width:85px;}
+#renderedPreview {display:inline-block;}
 
 #more {
 	background:#111111;

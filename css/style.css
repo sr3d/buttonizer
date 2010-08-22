@@ -42,6 +42,14 @@ a {color:#FFFF00; text-decoration:none;}
 	height:400px;
 }
 
+.control-item {
+	margin-bottom:20px;	
+}
+.control-item label {
+	display:block;
+	margin-bottom:5px;
+}
+
 .txtin {
 	background:none;
 	-webkit-border-radius: 6px;
@@ -67,7 +75,7 @@ a {color:#FFFF00; text-decoration:none;}
 
 #output {
 	background:url(../img/outputbg.png) 0 0 no-repeat;
-	height:400px;
+	height:300px;
 }
 
 h3 {
@@ -76,10 +84,19 @@ h3 {
 
 #preview {
 	background:url(../img/previewbg.png) 0 0 no-repeat;
-	height:400px;
+	height:80px;
+	margin-top:20px;
+	position:relative;
 }
 
 .inner {padding:15px;}
+
+#preview h3 {
+	margin-right:20px;
+	display:inline;
+}
+
+#renderedPreview {display:inline;}
 
 #more {
 	background:#111111;

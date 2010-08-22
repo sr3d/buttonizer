@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CSS3 Buttonizer</title>
@@ -37,45 +36,59 @@
         	<div id="control">
             	<div class="inner">
                 <h3>Pick your options!</h3>
-                <input type="text" id="className" class="txtin" placeholder="Pick a class" value="" /><br /><br />
-                <input type="text" id="button-text" class="txtin" value="What should your button say?" /><br /><br />
-                <label>How rounded should your border be?</label><br />
                 
+                <div class="control-item">
+                <label>What do you want to call the class?</label>
+                <input type="text" id="className" class="txtin" placeholder="Pick a class" value="" />
+                </div>
+                
+                <div class="control-item">
+                <label>What should your button say?</label>
+                <input type="text" id="button-text" class="txtin" value="" />
+                </div>
+                
+                <div class="control-item">
+                <label>How rounded should your border be?</label>
                 <div id="borderRadiusSlider"></div><!-- #borderRadiusSlider -->
+                </div>
                 
-                <br /><br />
-                <label>What color button would you like?</label><br />
-                Color Picker (to be decided)<br /><br />
-                <label>What size button is best?</label><br />
+                <div class="control-item">
+                <label>What color button would you like?</label>
+                Color Picker (to be decided)
+                </div>
                 
+                <div class="control-item">
+                <label>What size button is best?</label>
                 <div id="fontSizeSlider"></div><!-- #fontSizeSlider -->
-                
+                </div>
 
             	</div>
             </div>
         </div>
-        <div class="grid_5">
-        	<div id="output">
-            	<div class="inner">
-        		<h3>HTML:</h3>
-                <p>
-                &lt;a class=&quot;minim ltBlue&quot; href=&quot;#&quot;&gt;Preview&lt;/a&gt;
-                </p>
-                <h3>CSS:</h3>
-                <pre id="outputCss">blah</pre>
-                </p>
-            	</div>
-            </div>
-        </div>
-        <div class="grid_4 omega">
-        	<div id="preview">
-        		<div class="inner">
-                <h3>Preview:</h3>
-   					<a class="minim ltBlue" href="#">Alex Le</a><br /><br />
-					<a class="minim dkBlue" href="#">Anders Haig</a>
-                </div>
-            </div>
-        </div>
+        <div class="grid_9 omega">
+        
+              <div id="output">
+                  <div class="inner">
+                  <h3>HTML:</h3>
+                  <p>
+                  &lt;a class=&quot;minim ltBlue&quot; href=&quot;#&quot;&gt;Preview&lt;/a&gt;
+                  </p>
+                  <h3>CSS:</h3>
+                  <pre id="outputCss">blah</pre>
+                  </p>
+                  </div>
+              </div>
+
+              <div id="preview">
+                  <div class="inner">
+                  <h3>Preview:</h3>
+                  	<div id="renderedPreview">
+                      <a class="minim ltBlue" href="#">Your Button</a> <a class="minim dkBlue" href="#">Your Button</a>
+                   	</div>
+                  </div>
+              </div>
+
+    	</div>
    	<div class="clearfix"></div>     
     </div>
     <div class="grid_16">

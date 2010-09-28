@@ -8,7 +8,7 @@ $(document).ready(function() {
   }
   
   var css = {
-    className:      'mimim',
+    className:      'minim',
     fontSize:       '15px',
     fontWeight:     '700',
     padding:        '7px 20px',

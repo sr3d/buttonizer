@@ -15,7 +15,7 @@ body {
 a {color:#FFFF00; text-decoration:none;}
 
 #header {
-	background:#111111;
+	background:#222;
 	color:#FFF;
 	-webkit-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
@@ -23,7 +23,7 @@ a {color:#FFFF00; text-decoration:none;}
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px; 
-	border:1px solid #272727;
+	border:1px solid #353535;
 	border-top:none;
 	height:70px;
 	margin-bottom:100px;
@@ -46,8 +46,8 @@ a {color:#FFFF00; text-decoration:none;}
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	background:#111111;
-	border:1px solid #272727;
+	background:#222;
+	border:1px solid #353535;
 	color:#FFFFFF;
 	padding:5px 10px;
 	margin-bottom:5px;	
@@ -60,8 +60,8 @@ a {color:#FFFF00; text-decoration:none;}
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	background:#111111;
-	border:1px solid #272727;
+	background:#222;
+	border:1px solid #353535;
 	color:#FFFFFF;
 	padding:5px 10px 10px;
 	margin-bottom:5px;	
@@ -139,13 +139,13 @@ h3 {
 #renderedPreview {display:inline-block;}
 
 #more {
-	background:#111111;
+	background:#222;
 	color:#FFF;
 	margin-bottom:20px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	border:1px solid #272727;
+	border:1px solid #353535;
 }
 
 #footer {

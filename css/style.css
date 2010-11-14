@@ -104,10 +104,47 @@ a {color:#FFFF00; text-decoration:none;}
 	color:#FFF;
 }
 
+
+/* FARBTASTIC */
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(../img/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(../img/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden; 
+  background: url(../img/marker.png) no-repeat;
+}
+
+
 #borderRadiusSlider, #fontSizeSlider, #paddingSlider {
 	background:#141414;
 	border:1px solid #FFF;
 	height:0.5em;
+	margin-top:0.25em;
 }
 
 .ui-slider-handle {height:0.9em; width:0.9em; cursor:pointer; background-image:none; background-color:#FFF;}

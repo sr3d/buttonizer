@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('#colorPicker').farbtastic('#colorInput');
+	
   /* hook up the class prefix */
   var settings = {
     maxBorder:      20,  //px

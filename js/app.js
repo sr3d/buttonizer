@@ -14,7 +14,12 @@ $(document).ready(function() {
     fontSize:       '15px',
     fontWeight:     '700',
     padding:        '7px 20px',
-    borderRadius:   '3px'
+    borderRadius:   '3px',
+    primaryColor:	'#3a89a8'
+  };
+  
+  var extras = {
+  	buttonText:		'Your Button',
   };
   
   var tmpl = [

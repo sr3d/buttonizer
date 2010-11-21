@@ -34,7 +34,6 @@
     <div id="main" class="grid_16">
         <div class="grid_7 alpha">
         	<div id="control">
-            	<div id="controlInner">
                 <h3>Customize to your heart's content!</h3>
                 
                 <div class="controlInput">
@@ -52,9 +51,17 @@
                 <div id="borderRadiusSlider"></div>
                 </div>
                 
-                <div class="controlInput">
-                <label>Pick a color:</label><br />
-                <input type="text" id="colorInput" class="txtin" placeholder="Pick a color" value="#FFFFFF" />
+                <div class="controlInput" id="colorWrapper">
+                <label>Pick a main color:</label><br />
+                <input type="text" id="colorInput" class="colorIn" placeholder="Pick a color" value="#FFFFFF" /><br />
+                
+                <label>Pick a highlight color:</label><br />
+                <input type="text" id="highlightInput" class="colorIn" placeholder="Pick a color" value="#FFFFFF" /><br />
+                
+                <label>Pick a shadow color:</label><br />
+                <input type="text" id="shadowInput" class="colorIn" placeholder="Pick a color" value="#FFFFFF" />
+                
+                <div id="colorPicker"></div>
                 </div>
                 
                 <div class="controlSlider">
@@ -67,12 +74,10 @@
                 <div id="paddingSlider"></div>
                 </div>
 
-            	</div>
-            	<div id="colorPicker"></div>
             </div>
         </div>
         <div class="grid_9 omega">
-        
+        	<h3>This is what you get!</h3>
               <div id="output">
                   <div class="inner">
                   <h3>HTML:</h3>

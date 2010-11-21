@@ -26,7 +26,7 @@ a {color:#FFFF00; text-decoration:none;}
 	border:1px solid #353535;
 	border-top:none;
 	height:70px;
-	margin-bottom:100px;
+	margin-bottom:60px;
 }
 
 #logo {
@@ -37,10 +37,7 @@ a {color:#FFFF00; text-decoration:none;}
 	margin-bottom:20px;
 }
 
-#control {
-	background:url(../img/controlbg.png) 0 0 no-repeat;
-	height:400px;
-}
+#control {}
 
 .controlInput {
 	background:#222;
@@ -71,17 +68,14 @@ a {color:#FFFF00; text-decoration:none;}
 	border-bottom-left-radius: 10px; 
 }
 
-#controlInner {
-	padding:5px;
-}
-
-#controlInner h3 {
-	padding:10px 0 0;
+h3 {
+	margin:10px 0;
 	text-align:center;
-	text-shadow:1px 1px 1px #000;
+	color:#EEE;
+	text-shadow:2px 2px 3px #000;
 }
 
-.txtin {
+.txtin, .colorIn {
 	background:#141414;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -105,6 +99,17 @@ a {color:#FFFF00; text-decoration:none;}
 	color:#FFF;
 }
 
+#colorWrapper {
+	height:200px;
+	position:relative;
+}
+
+#colorPicker {
+	position:absolute;
+	top:50%;
+	right:10px;
+	margin-top:-97px;
+}
 
 /* FARBTASTIC */
 .farbtastic {
@@ -154,17 +159,13 @@ a {color:#FFFF00; text-decoration:none;}
 #button-text {}
 
 #output {
-	background:url(../img/outputbg.png) 0 0 no-repeat;
-	height:300px;
+	background:#222;
+	color:#FFF;
+	border:1px solid #353535;
 }
 
 #outputHtml {
 	
-}
-
-h3 {
-	color:#FFFF00;
-	margin-bottom:10px;
 }
 
 #preview {

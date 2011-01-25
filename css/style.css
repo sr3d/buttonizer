@@ -101,13 +101,37 @@ h3 {
 
 #colorWrapper {
 	height:200px;
+	margin:20px 0;
 	position:relative;
+}
+
+#colorSample {
+	
+}
+
+#colorInput {
+	height:186px;
+	width:186px;
+	line-height:186px;
+	-webkit-border-radius: 93px;
+	-moz-border-radius: 93px;
+	border-radius: 93px;
+	border:1px solid #FFF;
+	padding:0;
+	margin:0;
+	font-weight:normal;
+	font-size:18px;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	left:0;
+	margin-top:-93px;
 }
 
 #colorPicker {
 	position:absolute;
 	top:50%;
-	right:10px;
+	right:0;
 	margin-top:-97px;
 }
 

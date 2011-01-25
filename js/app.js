@@ -6,6 +6,7 @@ $(document).ready(function() {
     maxBorder:      20,  //px
     minFontSize:    10,
     maxFontSize:    30,
+    minPadding:    	 1,
     maxPadding:    	10
   }
   
@@ -58,7 +59,7 @@ $(document).ready(function() {
   
   /* hook up keyup event to the className input */
   var classNameInput = $('#className');
-  classNameInput.keyup(function(event) { 
+    classNameInput.keyup(function(event) { 
     css.className = $(classNameInput).val();
     preview();
   });
@@ -94,7 +95,7 @@ $(document).ready(function() {
     preview();
   };
   $('#paddingSlider').slider({
-    min:      0
+    min:      settings.minPadding
     ,max:     settings.maxPadding
     ,slide:   setPadding
     ,change:  setPadding

@@ -34,7 +34,7 @@ a {color:#FFFF00; text-decoration:none;}
 }
 
 #main {
-	margin-bottom:20px;
+	margin-bottom:30px;
 }
 
 #control {}
@@ -60,12 +60,6 @@ a {color:#FFFF00; text-decoration:none;}
 .controlSlider label {
 	display:inline-block;
 	margin-bottom:5px;	
-}
-.controlInput:last-child, .controlSlider:last-child {
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px; 
 }
 
 h3 {

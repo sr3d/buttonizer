@@ -1,1 +1,8 @@
-a collaboration of Anders Haig (http://minim.co/) and Alex Le (http://alexle.net)
+A collaboration of Anders Haig (http://minim.co/) and Alex Le (http://alexle.net).
+
+To-do:
+--------------------------------------------
+x - Fix padding so it displays padding="x y" rather than padding="x".
+x - Set gradient color, highlight color and shadow color based on the selected color.
+x - Add and configure the font style checkboxes.
+x - Add and configure the light/dark radio inputs.
